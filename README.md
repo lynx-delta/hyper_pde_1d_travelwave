@@ -19,7 +19,7 @@ The initiation of the tsunami (e.g. a subsea earthquake) can be modelled by the 
 
 ![Initiation of tsunami](data/formula_2.png)  
 
-centered at *x*<sub>1</sub>, with (additional) sea surface height <i>&alpha</i><sub>1</sub> and spread <i>x3C3</i><sub>1</sub>. The subsea hill (or depression) is modelled as  
+centered at *x*<sub>1</sub>, with (additional) sea surface height <i>&alpha;</i><sub>1</sub> and spread <i>&sigma;</i><sub>1</sub>. The subsea hill (or depression) is modelled as  
 
 ![Subsea hill](data/formula_3.png)  
 
