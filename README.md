@@ -23,7 +23,7 @@ centered at *x*<sub>1</sub>, with (additional) sea surface height <i>&alpha;</i>
 
 ![Subsea hill](data/formula_3.png)  
 
-with the center at *x*<sub>B</sub>, the elevation &alpha<sub>B</sub> and the spread &sigma<sub>B</sub>. To model infinite spatial domains, an open boundary at *x* = 0 respectively at *x* = L given by the condition  
+with the center at *x*<sub>B</sub>, the elevation <i>&alpha;</i><sub>B</sub> and the spread <i>&sigma;</i><sub>B</sub>. To model infinite spatial domains, an open boundary at *x* = 0 respectively at *x* = L given by the condition  
 
 ![Open boundary](data/formula_4.png)  
 
