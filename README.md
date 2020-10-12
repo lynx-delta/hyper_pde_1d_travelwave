@@ -19,11 +19,11 @@ The initiation of the tsunami (e.g. a subsea earthquake) can be modelled by the 
 
 ![Initiation of tsunami](data/formula_2.png)  
 
-centered at *x*<sub>1</sub>, with (additional) sea surface height *&alpha*<sub>1</sub> and spread &sigma<sub>1</sub>. The subsea hill (or depression) is modelled as  
+centered at *x*<sub>1</sub>, with (additional) sea surface height <i>&alpha</i><sub>1</sub> and spread <i>x3C3</i><sub>1</sub>. The subsea hill (or depression) is modelled as  
 
 ![Subsea hill](data/formula_3.png)  
 
-with the center at *x*<sub>B</sub>, the elevation &alpha<sub>B</sub> and the spread &sigma<sub>B</sub>. To model infinite spatial domains, an open boundary at *x = 0* respectively at *x = L* given by the condition  
+with the center at *x*<sub>B</sub>, the elevation &alpha<sub>B</sub> and the spread &sigma<sub>B</sub>. To model infinite spatial domains, an open boundary at *x* = 0 respectively at *x* = L given by the condition  
 
 ![Open boundary](data/formula_4.png)  
 
