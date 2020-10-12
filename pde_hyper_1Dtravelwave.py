@@ -81,7 +81,7 @@ def travelwave_solve(mx, mt, L, T, h_sb, u_I, v_I, output='plot'):
         dt = t[1] - t[0]
         
     # Set mesh constant
-    Csqr = (dt/dx)**2
+    c_sqr = (dt/dx)**2
     # Set up the solution variables
     u_j = np.zeros(x.size)             # u at current time step
     u_jp1s = np.zeros(x.size)          # u at next time step
@@ -89,7 +89,7 @@ def travelwave_solve(mx, mt, L, T, h_sb, u_I, v_I, output='plot'):
     u_jmns = u_I                # u at previous time step / initial condition
     
     # First timestep
-    u_j[1:-1] = u_jmns[1:-1] + dt*v_I[1:-1] + 0.5*Csqr*(0.5*(h_x[1:-1] \
+    u_j[1:-1] = u_jmns[1:-1] + dt*v_I[1:-1] + 0.5*c_sqr*(0.5*(h_x[1:-1] \
                 + h_x[2:])*(u_jmns[2:] - u_jmns[1:-1]) - 0.5*(h_x[1:-1] \
                 + h_x[:-2])*(u_jmns[1:-1] - u_jmns[:-2]))
     # Open boundary at x = 0
@@ -99,7 +99,7 @@ def travelwave_solve(mx, mt, L, T, h_sb, u_I, v_I, output='plot'):
     
     # Loop for regular timesteps
     for n in range(2, mt+1):
-        u_jp1s[1:-1] = -u_jmns[1:-1] + 2*u_j[1:-1] + Csqr*(0.5*(h_x[1:-1] \
+        u_jp1s[1:-1] = -u_jmns[1:-1] + 2*u_j[1:-1] + c_sqr*(0.5*(h_x[1:-1] \
                       + h_x[2:])*(u_j[2:] - u_j[1:-1]) - 0.5*(h_x[1:-1] \
                       + h_x[:-2])*(u_j[1:-1] - u_j[:-2]))
         # Open boundary at x = 0
